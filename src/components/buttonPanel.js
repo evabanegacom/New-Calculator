@@ -5,6 +5,7 @@ import Button from './button';
 
 const ButtonPanel = ({ handleClick }) => {
   const Bottin = styled.div`
+  /* stylelint-disable */
     height: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -18,18 +19,17 @@ const ButtonPanel = ({ handleClick }) => {
   ];
 
   const orangeBtns = ['÷', 'x', '-', '+', '='];
-
-  const buttonList = buttonGroups.map((btnGrp, idx) => (
-    <Bottin key={idx}>
-      {btnGrp.map((btn, id) => (orangeBtns.includes(btn) ? (
+  const buttonList = buttonGroups.map(btnGrp => (
+    <Bottin key={btnGrp}>
+      {btnGrp.map(btn => (orangeBtns.includes(btn) ? (
         <Button
-          key={id}
+          key={btn}
           name={btn}
           handleClick={handleClick}
-          /> /*eslint-disable-line*/
+        />
       ) : btn === '0' ? (
         <Button
-          key={id}
+          key={btn}
           name={btn}
           color="#E0E0E0"
           wide
@@ -37,7 +37,7 @@ const ButtonPanel = ({ handleClick }) => {
         />
       ) : (
         <Button
-          key={id}
+          key={btn}
           name={btn}
           color="#E0E0E0"
           handleClick={handleClick}

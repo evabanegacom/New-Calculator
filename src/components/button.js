@@ -6,6 +6,7 @@ const Button = ({
   name, color, wide, handleClick,
 }) => {
   const Botton = styled.button`
+    /* stylelint-disable */
     font-weight: bold;
     font-size: 20px;
     border: 1px solid #bbb;

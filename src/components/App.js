@@ -5,9 +5,10 @@ import ButtonPanel from './buttonPanel';
 import calculate from '../logic/calculate';
 
 const Calculator = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 700px;
+/* stylelint-disable */
+display: flex;
+flex-direction: column;
+width: 700px;
 `;
 
 class App extends React.Component {

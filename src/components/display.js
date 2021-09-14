@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const Display = ({ result, operation }) => {
   const Buttons = styled.div`
-
+/* stylelint-disable */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -15,7 +15,7 @@ const Display = ({ result, operation }) => {
     padding: 10px;
     font-size: 30px;
 `;
-  return <Buttons>{`${result} ${operation || ""}`}</Buttons>;
+  return <Buttons>{`${result} ${operation || ''}`}</Buttons>;
 };
 
 Display.propTypes = {
@@ -24,8 +24,8 @@ Display.propTypes = {
 };
 
 Display.defaultProps = {
-  result: "0",
-  operation: "",
+  result: '0',
+  operation: '',
 };
 
 export default Display;
