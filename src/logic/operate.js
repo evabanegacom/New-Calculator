@@ -1,18 +1,14 @@
-const Big = require('big.js');
-
 const operate = (num1, num2, operation) => {
-  const numb1 = new Big(num1);
-  const numb2 = new Big(num2);
   switch (operation) {
     case '+':
-      return numb1.plus(numb2).toString();
+      return Number(num1) + Number(num2)
     case 'x':
-      return numb1.times(numb2).toString();
+      return Number(num1) * Number(num2)
     case '-':
-      return numb1.minus(numb2).toString();
+      return Number(num1) - Number(num2)
     case '÷':
       try {
-        return numb1.div(numb2).toString();
+        return Number(num1) / Number(num2)
       } catch (error) {
         return undefined;
       }
