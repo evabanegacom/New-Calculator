@@ -13,8 +13,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-Calculator -- [React-app]
-This project is part of the Microverse curriculum in React&Redux module!
+Technical Test -- [React-app]
+This project is Sezzles's senior software developer technical test!
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -22,32 +22,29 @@ This project is part of the Microverse curriculum in React&Redux module!
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-* [License](#license)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is Calculator created with reactjs
+This Calculator is created with reactjs
 <!-- INSTALLATION -->
 ## Installation
 
 To have this app on your pc, you need to:
 * have to enable javascript on your browser and a code editor
-* [download](git@github.com:evabanegacom/Calculator.git) or clone this repo:
+* [download](git@github.com:evabanegacom/New-Calculator.git) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:evabanegacom/Calculator.git
+    git@github.com:evabanegacom/New-Calculator.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/evabanegacom/Calculator.git
+    https://github.com/evabanegacom/New-Calculator.git
   ```
 * Open the terminal inside the cloned directory:-
-
-# Live Demo
-- (https://inherent-resolve.herokuapp.com/)
-
+```
+- run npm start
+```
 ![Screenshot](images/cal.png)
 
 ### Built With
@@ -55,7 +52,7 @@ This project was built using these technologies.
 * Html & css
 * Javascript
 * react
-* Bootstrap framework
+* Styled-component
 * eslint
 * VsCode
 <!-- CONTACT -->
@@ -64,8 +61,3 @@ This project was built using these technologies.
 👤 **Precious**
 
 - GitHub: [@Precious](https://github.com/evabanegacom)
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [Microverse](https://www.microverse.org/)
-* [The Odin Project](https://www.theodinproject.com/)

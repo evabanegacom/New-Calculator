@@ -1,7 +1,14 @@
-import React from "react";
-import Display from "./display";
-import ButtonPanel from "./buttonPanel";
-import calculate from "../logic/calculate";
+import React from 'react';
+import styled from 'styled-components';
+import Display from './display';
+import ButtonPanel from './buttonPanel';
+import calculate from '../logic/calculate';
+
+const Calculator = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+`;
 
 class App extends React.Component {
   constructor() {
@@ -15,17 +22,18 @@ class App extends React.Component {
   }
 
   handleClick(btnName) {
-    this.setState((data) => calculate(data, btnName));
+    this.setState(data => calculate(data, btnName));
   }
 
   render() {
     const { total, next, operation } = this.state;
-    const result = next || total || "0";
+    const result = next || total || '0';
+
     return (
-      <div id="calculator">
+      <Calculator>
         <Display result={result.toString()} operation={operation} />
         <ButtonPanel handleClick={this.handleClick} />
-      </div>
+      </Calculator>
     );
   }
 }
